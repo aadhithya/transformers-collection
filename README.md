@@ -6,6 +6,7 @@
 ## Get started
 ### Train Models using the library
 - To train models, install using pip: `pip install transformers_collection`
+- check installation: `transformers-collection version`
 
 ### Clone project and modify code
 To play around with the code clone the repo:
