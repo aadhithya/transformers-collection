@@ -1,4 +1,4 @@
-name: Code Quality and Semver
+name: Code Quality and Release
 on:
   push:
     branches: [master]
@@ -69,5 +69,4 @@ jobs:
         uses: aadhithya/py-semantic-release-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          repository_name: __token__
-          repository_password: ${{ secrets.PYPI_TOKEN }}
+          pypi_token: __token__
