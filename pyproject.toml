@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "transformers-collection"
-version = "0.1.2"
+version = "0.2.0"
 description = "A collection of transformer models built  using huggingface for various tasks."
 authors = ["Aadhithya Sankar <aadhithya.s@outlook.com>"]
 license = "MIT"

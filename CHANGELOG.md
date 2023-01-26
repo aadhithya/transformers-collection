@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2023-01-26)
+### Feature
+* **transformers_collection:** Model to use now inferred from config file ([`535f2f2`](https://github.com/aadhithya/transformers-collection/commit/535f2f2af93bbf93fc5238b4e3436033614a5f93))
+
+### Documentation
+* **README.md:** Update readme ([`f38b9e0`](https://github.com/aadhithya/transformers-collection/commit/f38b9e094662bf8c59163fa555c34d4956d5f10f))
+* **README.md:** Update readme ([`5749cf6`](https://github.com/aadhithya/transformers-collection/commit/5749cf67c3a42087b29d715f9528644a0c859dba))
+
 ## v0.1.2 (2023-01-26)
 ### Fix
 * **__init__.py:** Fix formatting ([`0a8a222`](https://github.com/aadhithya/transformers-collection/commit/0a8a2229d740029ba4f934deb7fe186e5d306ebc))
