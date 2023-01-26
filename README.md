@@ -14,11 +14,18 @@ To play around with the code clone the repo:
 - Intsall dependencies: `poetry install`
 
 **Note:** `poetry install` will create a new venv.
+**Note**: `poetry/pip install` installs CPU version of pytorch if not available, please make sure to install CUDA version if needed.
+
+
+## Train a model
+- Create the yaml config file for the model (see configs/sentiment-clf.yml for example).
+- train model using: `transformers-collection train /path/to/config.yml`
+
+- For a list of supported models, see section Supported Models.
 
 
 
-
-## Models
+## Supported Models / Task
 The following models are planned:
 | Model                            |                      Dataset                       |  Status   | Checkpoint |
 | :------------------------------- | :------------------------------------------------: | :-------: | ---------: |
