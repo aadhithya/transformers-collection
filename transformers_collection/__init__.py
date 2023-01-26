@@ -1,4 +1,4 @@
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __about__ = (
     "A collection of transformer models built using huggingface for various tasks."
     "\nTraining done using pytorch lightning.\nCreated by Aadhithya Sankar<aadhithya.s@outlook.com>."

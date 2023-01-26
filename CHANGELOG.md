@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.1 (2023-01-26)
+### Fix
+* Fix version string ([`bb41abd`](https://github.com/aadhithya/transformers-collection/commit/bb41abd01cb4e926aab56e70a057af897319d6ba))
+
 ## v0.1.0 (2023-01-26)
 ### Feature
 * **transformers_collection:** Add sentiment classification ([`c709dc0`](https://github.com/aadhithya/transformers-collection/commit/c709dc06908a0051572c3d8ac3ad0f32552c9489))
