@@ -1,6 +1,6 @@
 from typer import Argument, Typer
 
-from transformers_collection import __version__
+from transformers_collection import __about__, __version__
 from transformers_collection.models.models import SentimentClassifier
 
 app = Typer()
@@ -8,7 +8,8 @@ app = Typer()
 
 @app.command("version", help="Print the version and quit.")
 def version():
-    print(f"transformers-collection v{__version__}")
+    print(f"\033[1mtransformers-collection v{__version__} \033[0m")
+    print(__about__)
 
 
 @app.command("train", help="Train and evaluate model.")
