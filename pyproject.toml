@@ -33,3 +33,18 @@ ipywidgets = "^8.0.4"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+transformers-collection = "transformers_collection.__main__:app"
+
+[tool.semantic_release]
+version_variable = [
+    "pyproject.toml:version",
+    "transformers_collection/__init__.py:__version__"
+]
+branch = "master"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
+commit_subject = "Bump to {version}"
+commit_message = "Bump to {version}"
