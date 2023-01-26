@@ -60,13 +60,15 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: ${{env.PYTHON_VERSION}}
+
       - name: Checkout code
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
+
       - name: Python Semantic Release
         uses: aadhithya/py-semantic-release-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          pypi_token: __token__
+          github_token: ${{ secrets.GH_TOKEN }}
+          pypi_token: ${{ secrets.PYPI_TOKEN }}
