@@ -1,13 +1,12 @@
 import pytorch_lightning as pl
 import torch
+from munch import Munch
 from torch import nn
-
-from transformers_collection.config_loader import load_config_file
 
 
 class ModelMeta:
-    def __init__(self, cfg_path: str) -> None:
-        self.cfg = self.__load_config(cfg_path)
+    def __init__(self, cfg: Munch) -> None:
+        self.cfg = cfg
         self.tokenizer = None
         self.train_loader = self.val_loader = None
         self.model = None
@@ -16,9 +15,6 @@ class ModelMeta:
         raise NotImplementedError(
             "Function needs to be overridden by child class!"
         )
-
-    def __load_config(self, cfg_path):
-        return load_config_file(cfg_path)
 
 
 class BaseModel(pl.LightningModule):
