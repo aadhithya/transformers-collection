@@ -28,7 +28,13 @@ To play around with the code clone the repo:
 
 ## Supported Models / Task
 The following models are planned:
-| Model                            |                      Dataset                       |  Status   | Checkpoint |
-| :------------------------------- | :------------------------------------------------: | :-------: | ---------: |
-| Sentiment/Emotion Classification | [emotion](https://huggingface.co/datasets/emotion) |     ✅     |        TBD |
-| Text Summarization               |                                                    | 🗓️ Planned |        TBD |
+| Task                | Model                     |                  Default Dataset                   |  Status   | Checkpoint |
+| :------------------ | ------------------------- | :------------------------------------------------: | :-------: | ---------: |
+| Text Classification | `SentimentClassification` | [emotion](https://huggingface.co/datasets/emotion) |     ✅     |        TBD |
+| Text Summarization  | -                         |                                                    | 🗓️ Planned |        TBD |
+
+
+## ToDo
+- [ ] Auto push model to huggingface hub with commit ref.
+- [ ] make models available via transformers pipelines.
+- [ ] add more models.
