@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "transformers-collection"
+version = "0.1.0"
+description = "A collection of transformer models built  using huggingface for various tasks."
+authors = ["Aadhithya Sankar <aadhithya.s@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "transformers_collection"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = {url = "https://download.pytorch.org/whl/cu116/torch-1.13.1%2Bcu116-cp39-cp39-linux_x86_64.whl"}
+numpy = "^1.24.1"
+transformers = "^4.26.0"
+loguru = "^0.6.0"
+tensorboard = "^2.11.2"
+pytorch-lightning = "^1.9.0"
+datasets = "^2.8.0"
+evaluate = "^0.4.0"
+typer = "^0.7.0"
+
+[tool.poetry.group.dev.dependencies]
+commitizen = "^2.40.0"
+pre-commit = "^3.0.0"
+flake8 = "^6.0.0"
+black = "^22.12.0"
+ipykernel = "^6.20.2"
+ipywidgets = "^8.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
